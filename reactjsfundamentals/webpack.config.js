@@ -9,7 +9,7 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 module.exports = {
     //Entry point for application
     entry: [
-        '.app/index.js'
+        '.app/views/index.js'
     ],
     module: {
         //What webpack will affect, exclude
