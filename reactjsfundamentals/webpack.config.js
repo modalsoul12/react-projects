@@ -14,7 +14,7 @@ module.exports = {
     module: {
         //What webpack will affect, exclude
         loaders: [
-            {test: /\.coffee$/, exclude: /node_modules/, loader: "coffee-loader"}
+            {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"}
         ]
     },
     output: {
@@ -22,4 +22,5 @@ module.exports = {
         filename: "index_bundle.js",
         path: __dirname + '/dist'
   },
-}
+  plugins: [HtmlWebpackPluginConfig]
+};
