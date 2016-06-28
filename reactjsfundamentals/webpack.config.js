@@ -1,4 +1,4 @@
-//Plugin to automatically replace index.html for the built version of our app.
+//Plugin to automatically replace index.html for the production version of our app.
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/views/index.html',
@@ -9,7 +9,7 @@ var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
 module.exports = {
     //Entry point for application
     entry: [
-        '.app/views/index.js'
+        './app/views/index.js'
     ],
     module: {
         //What webpack will affect, exclude
@@ -22,5 +22,5 @@ module.exports = {
         filename: "index_bundle.js",
         path: __dirname + '/dist'
   },
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [HTMLWebpackPluginConfig]
 };
