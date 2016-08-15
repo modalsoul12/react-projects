@@ -1,0 +1,12 @@
+React.js Notes
+
+-Explicit Binding
+---------------------------------------------------------------------
+Defines the context of "this" within the function that calls these 3 functions:
+.call();
+.apply();
+.bind();
+
+Sample:
+
+---------------------------------------------------------------------
